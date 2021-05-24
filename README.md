@@ -1,5 +1,5 @@
 # price, holder amount and gas fee discord bots
-- 3 discord bots that show erc 20 token's price, holder amount and current gas fees as their nickname  
+- 3 discord bots that show erc-20 token's price, holder amount and current gas fees as their nickname  
 ![image of bots](https://i.imgur.com/bOQJ0QV.png)
 ## how to use
 - Download the files.
