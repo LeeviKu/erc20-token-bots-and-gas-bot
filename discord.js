@@ -51,8 +51,8 @@ priceBotClient.on("ready", async () => {
       const priceOfTkinuInEth = json.data.pair.token0Price
       const priceOfEth = json2.data.pair.token0Price
       const priceOfTkinuInUsd = priceOfTkinuInEth * priceOfEth
-      await priceBotClient.guilds.cache.find(guild => guild.id === process.env.guildId).me.setNickname(Number(priceOfTkinuInUsd).toFixed(11))
-      console.log(Number(priceOfTkinuInUsd).toFixed(11))
+      await priceBotClient.guilds.cache.find(guild => guild.id === process.env.guildId).me.setNickname(Number(priceOfTkinuInUsd).toFixed(process.env.decimalAmount))
+      console.log(Number(priceOfTkinuInUsd).toFixed(process.env.decimalAmount))
     }, 30000);
 })
 
