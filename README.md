@@ -12,7 +12,7 @@ priceBotClientId=**************
 holdersBotClientId=************  
 guildId=************* // go to your discord channel and right click the name and select copy id  
 etherscanApiKey=************** // get the api key https://etherscan.io/apis  
-tokenContract=***************** // for example go to dextools search your coin and copy from under the name "token contract"  
+tokenContract=***************** // for example go to dextools search your coin and copy "token contract" from under the name  
 tokenPair=**************** // from same place you got the "token contract" but now copy the pair  
 decimalAmount=11 // how many decimal points the price has
   
