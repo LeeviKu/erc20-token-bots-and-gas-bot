@@ -6,7 +6,7 @@
 - install node.js
 - go to the folder in terminal and type
   - npm install
-- create .env file to root and give it these values:  
+- put these values into the .env file:  
 gasFeeBotClientId=************** // guide for getting the id https://www.freecodecamp.org/news/create-a-discord-bot-with-python/  
 priceBotClientId=**************  
 holdersBotClientId=************  
