@@ -7,14 +7,14 @@
 - go to the folder in terminal and type
   - npm install
 - create .env file to root and give it these values:  
-gasFeeBotClientId=**************            // guide for getting the id https://www.freecodecamp.org/news/create-a-discord-bot-with-python/  
+gasFeeBotClientId=**************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// guide for getting the id https://www.freecodecamp.org/news/create-a-discord-bot-with-python/  
 priceBotClientId=**************  
 holdersBotClientId=************  
-guildId=*************                       // go to your discord channel and right click the name and select copy id  
-etherscanApiKey=**************              // get the api key https://etherscan.io/apis  
-tokenContract=*****************             // for example go to dextools search your coin and copy from under the name "token contract"  
-tokenPair=****************                  // from same place you got the "token contract" but now copy the pair  
-decimalAmount=11                            // how many decimal points the price has
+guildId=*************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// go to your discord channel and right click the name and select copy id  
+etherscanApiKey=**************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// get the api key https://etherscan.io/apis  
+tokenContract=*****************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// for example go to dextools search your coin and copy from under the name "token contract"  
+tokenPair=****************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// from same place you got the "token contract" but now copy the pair  
+decimalAmount=11&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// how many decimal points the price has
   
 - lastly type node discord.js in terminal
 - and there you go the bot should be running!
