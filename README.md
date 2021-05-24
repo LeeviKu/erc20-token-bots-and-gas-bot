@@ -1,5 +1,6 @@
 # price, holder amount and gas fee bots
 - 3 discord bots that show erc 20 token's price, holder amount and current gas fees as their nickname
+![image of bots](https://i.imgur.com/bOQJ0QV.png)
 ## how to use
 - download the files
 - install node.js
@@ -16,5 +17,5 @@ tokenPair=****************  // from same place you got the "token contract" but 
   
 - lastly type node discord.js in terminal
 - and there you go the bot should be running!
-- if you have any questions or problems contact: leevi.kukkula@gmail.com
+- if you have any questions or problems add me in discord: paskapeli73#3717
 - throw me some eth or other erc 20 tokens: 0x8587bacF9AC1Cb9De3E5E0fD2Bb2FB480F6Cf58D
