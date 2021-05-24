@@ -8,20 +8,20 @@ require('dotenv').config()
 
 gasFeeBotClient.on("ready", () => {
     setInterval(async () => {
-      const result = await axios.get("https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=ZAXZI8VT6R4X6ZYSDSNR7JFWW7U8K5RI5C")
+      const result = await axios.get(`https://api.etherscan.io/api?module=gastracker&action=gasoracle&apikey=${process.env.etherscanApiKey}`)
       const low = result.data.result.SafeGasPrice
       const average = result.data.result.ProposeGasPrice
       const fast = result.data.result.FastGasPrice
-      await gasFeeBotClient.guilds.cache.find(guild => guild.id === '841569963151851540').me.setNickname(`${fast} ${average} ${low}`)
-      console.log(`${low} ${average} ${fast}`)
+      await gasFeeBotClient.guilds.cache.find(guild => guild.id === process.env.guildId).me.setNickname(`${fast} ${average} ${low}`)
+      console.log(`${fast} ${average} ${low}`)
     }, 30000);
 })
 
 holdersBotClient.on("ready", () => {
     setInterval(async () => {
-      const result = await axios.get("https://api.ethplorer.io/getTokenInfo/0xda23d301761e4e2bf474951f978f6dfb6f3c9f14?apiKey=freekey").catch(e => console.log(e))
+      const result = await axios.get(`https://api.ethplorer.io/getTokenInfo/${process.env.tokenContract}?apiKey=freekey`).catch(e => console.log(e))
       const holders = result.data.holdersCount
-      await holdersBotClient.guilds.cache.find(guild => guild.id === '841569963151851540').me.setNickname(holders)
+      await holdersBotClient.guilds.cache.find(guild => guild.id === process.env.guildId).me.setNickname(holders)
       console.log(holders)
     }, 90000);
 })
@@ -33,7 +33,7 @@ priceBotClient.on("ready", async () => {
         headers: { "Content-type": "application/json" },
         body: JSON.stringify({
           query: `
-            {	pair(id: \"0x214913d4aab5bb321498edb7309cf68cd8c5d86b\"){    token0Price  }}
+            {	pair(id: \"${process.env.tokenPair}\"){    token0Price  }}
           `
         })
       }).catch(e => console.log(e))
@@ -51,7 +51,7 @@ priceBotClient.on("ready", async () => {
       const priceOfTkinuInEth = json.data.pair.token0Price
       const priceOfEth = json2.data.pair.token0Price
       const priceOfTkinuInUsd = priceOfTkinuInEth * priceOfEth
-      await priceBotClient.guilds.cache.find(guild => guild.id === '841569963151851540').me.setNickname(Number(priceOfTkinuInUsd).toFixed(11))
+      await priceBotClient.guilds.cache.find(guild => guild.id === process.env.guildId).me.setNickname(Number(priceOfTkinuInUsd).toFixed(11))
       console.log(Number(priceOfTkinuInUsd).toFixed(11))
     }, 30000);
 })
