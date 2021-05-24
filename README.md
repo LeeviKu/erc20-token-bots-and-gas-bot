@@ -10,7 +10,7 @@
 gasFeeBotClientId=**************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// guide for getting the id https://www.freecodecamp.org/news/create-a-discord-bot-with-python/  
 priceBotClientId=**************  
 holdersBotClientId=************  
-guildId=*************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// go to your discord channel and right click the name and select copy id  
+guildId=*************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// go to your discord channel and right click the name and select copy id  
 etherscanApiKey=**************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// get the api key https://etherscan.io/apis  
 tokenContract=*****************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// for example go to dextools search your coin and copy from under the name "token contract"  
 tokenPair=****************&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;// from same place you got the "token contract" but now copy the pair  
