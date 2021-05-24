@@ -6,6 +6,7 @@
 - install node.js
 - go to the folder in terminal and type
   - npm install
+- create 3 bots // guide https://www.freecodecamp.org/news/create-a-discord-bot-with-python/  
 - put these values into the .env file:  
 gasFeeBotClientId=************** // guide for getting the id https://www.freecodecamp.org/news/create-a-discord-bot-with-python/  
 priceBotClientId=**************  
